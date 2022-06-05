@@ -5,6 +5,8 @@ from rest_framework.response import Response
 from .models import Sensor
 from .serializers import SensorSerializers
 
+
+# function handler for getting data and post data
 @api_view(['GET', 'POST'])
 def sensorHandler(request):
     qs = Sensor.objects.all()
